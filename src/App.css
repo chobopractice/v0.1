@@ -2,17 +2,97 @@
   text-align: center;
 }
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+      "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
   }
 }
 
+.container {
+  min-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  width: 400px;
+  margin-top: 72px;
+}
+
+.question-section {
+  margin-bottom: 16px;
+}
+
+.question-header {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.question-text {
+  min-width: 400px;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.result-score {
+  min-width: 400px;
+	font-size: 192px;
+	margin: 40px;
+	text-align: center;
+	color: rgb(115, 98, 255);
+}
+.result-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  font-size: 16px;
+  width: 100%;
+  color: #ffffff;
+  background-color: rgb(115, 98, 255);
+  border-radius: 5px;
+  border: 0px;
+  height: 56px;
+  padding: 4px;
+  cursor: pointer;
+  outline: none;
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: #a99fee;
+}
+.testTitle {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  background-color: gray;
+  font-size: medium;
+  margin-top: 50px;
+  align-items: center;
+}
+.result-score {
+	font-size: 10rem;
+	margin: 40px;
+	text-align: center;
+	color: rgb(115, 98, 255);
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
